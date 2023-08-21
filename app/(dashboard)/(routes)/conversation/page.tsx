@@ -53,7 +53,7 @@ const ConversationPage = () => {
     } catch (error: any) {
       console.log(error);
     } finally {
-      router.refresh();
+      router.refresh(); // to refetch all server components
     }
   };
 
