@@ -39,6 +39,7 @@ const ConversationPage = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
+      throw new Error("Something");
       const userMessage: ChatCompletionRequestMessage = {
         role: "user",
         content: values.prompt,
